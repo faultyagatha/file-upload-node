@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>File Metadata</title>
+  <link rel="shortcut icon" href="https://cdn.freecodecamp.org/universal/favicons/favicon-32x32.png"
+    type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <link href="/public/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>File Upload</h2>
+
+    <h3>Upload a file you want to get metadata from:</h3>
+    <div class="view">
+      <h4 id="output"></h4>
+      <form enctype="multipart/form-data" method="POST" action="/api/metadata">
+        <input id="inputfield" type="file" name="upfile">
+        <input id="button" type="submit" value="Analyse">
+      </form>
+    </div>
+
+    <h3>Upload a file in your project:</h3>
+    <div class="view">
+      <h4 id="output"></h4>
+      <form enctype="multipart/form-data" method="POST" action="/api/upload">
+        <input id="inputfield" type="file" name="image">
+        <input id="button" type="submit" value="Upload">
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+  </div>
+</body>
+
+</html>
